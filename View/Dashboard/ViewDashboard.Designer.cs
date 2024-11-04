@@ -30,19 +30,19 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.probarConexiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estudiantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignaturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facultadesYEspecialidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFondo = new System.Windows.Forms.Panel();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.probarConexiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEstudiantes = new System.Windows.Forms.Button();
             this.btnDocentes = new System.Windows.Forms.Button();
             this.btnAsignaturas = new System.Windows.Forms.Button();
             this.btnFacultades = new System.Windows.Forms.Button();
-            this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelFondo.SuspendLayout();
             this.panelMenu.SuspendLayout();
@@ -71,6 +71,12 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // probarConexiónToolStripMenuItem
+            // 
+            this.probarConexiónToolStripMenuItem.Name = "probarConexiónToolStripMenuItem";
+            this.probarConexiónToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.probarConexiónToolStripMenuItem.Text = "Probar conexión";
+            // 
             // estudiantesToolStripMenuItem
             // 
             this.estudiantesToolStripMenuItem.Name = "estudiantesToolStripMenuItem";
@@ -95,6 +101,13 @@
             this.facultadesYEspecialidadesToolStripMenuItem.Size = new System.Drawing.Size(163, 20);
             this.facultadesYEspecialidadesToolStripMenuItem.Text = "Facultades y Especialidades";
             // 
+            // cerrarFormularioToolStripMenuItem
+            // 
+            this.cerrarFormularioToolStripMenuItem.Image = global::Refuerzo2024.Properties.Resources.Close;
+            this.cerrarFormularioToolStripMenuItem.Name = "cerrarFormularioToolStripMenuItem";
+            this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
+            this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
+            // 
             // panelFondo
             // 
             this.panelFondo.Controls.Add(this.PanelContenedor);
@@ -116,27 +129,21 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panelMenu.Controls.Add(this.btnEstudiantes);
-            this.panelMenu.Controls.Add(this.btnDocentes);
-            this.panelMenu.Controls.Add(this.btnAsignaturas);
             this.panelMenu.Controls.Add(this.btnFacultades);
+            this.panelMenu.Controls.Add(this.btnDocentes);
+            this.panelMenu.Controls.Add(this.btnEstudiantes);
+            this.panelMenu.Controls.Add(this.btnAsignaturas);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(208, 637);
             this.panelMenu.TabIndex = 0;
             // 
-            // probarConexiónToolStripMenuItem
-            // 
-            this.probarConexiónToolStripMenuItem.Name = "probarConexiónToolStripMenuItem";
-            this.probarConexiónToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.probarConexiónToolStripMenuItem.Text = "Probar conexión";
-            // 
             // btnEstudiantes
             // 
             this.btnEstudiantes.Image = global::Refuerzo2024.Properties.Resources.icons8_alumna_35;
             this.btnEstudiantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstudiantes.Location = new System.Drawing.Point(3, 3);
+            this.btnEstudiantes.Location = new System.Drawing.Point(3, 111);
             this.btnEstudiantes.Name = "btnEstudiantes";
             this.btnEstudiantes.Size = new System.Drawing.Size(199, 48);
             this.btnEstudiantes.TabIndex = 0;
@@ -160,7 +167,7 @@
             // 
             this.btnAsignaturas.Image = global::Refuerzo2024.Properties.Resources.icons8_electivo_35;
             this.btnAsignaturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsignaturas.Location = new System.Drawing.Point(3, 111);
+            this.btnAsignaturas.Location = new System.Drawing.Point(3, 165);
             this.btnAsignaturas.Name = "btnAsignaturas";
             this.btnAsignaturas.Size = new System.Drawing.Size(199, 48);
             this.btnAsignaturas.TabIndex = 2;
@@ -172,20 +179,13 @@
             // 
             this.btnFacultades.Image = global::Refuerzo2024.Properties.Resources.icons8_faculty_35;
             this.btnFacultades.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFacultades.Location = new System.Drawing.Point(3, 165);
+            this.btnFacultades.Location = new System.Drawing.Point(3, 3);
             this.btnFacultades.Name = "btnFacultades";
             this.btnFacultades.Size = new System.Drawing.Size(199, 48);
             this.btnFacultades.TabIndex = 3;
             this.btnFacultades.Text = "Facultades y especialidades";
             this.btnFacultades.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFacultades.UseVisualStyleBackColor = true;
-            // 
-            // cerrarFormularioToolStripMenuItem
-            // 
-            this.cerrarFormularioToolStripMenuItem.Image = global::Refuerzo2024.Properties.Resources.Close;
-            this.cerrarFormularioToolStripMenuItem.Name = "cerrarFormularioToolStripMenuItem";
-            this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(126, 20);
-            this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
             // 
             // ViewDashboard
             // 

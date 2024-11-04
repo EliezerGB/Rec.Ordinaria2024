@@ -46,9 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\Asignaturas\controllerAsignaturas.cs" />
     <Compile Include="Controller\Dashboard\ControllerDashboard.cs" />
     <Compile Include="Controller\Estudiantes\ControllerEstudiante.cs" />
     <Compile Include="Model\Conexion\dbContext.cs" />
+    <Compile Include="Model\DAO\DAOasignaturas.cs" />
     <Compile Include="Model\DAO\DAOEstudiantes.cs" />
     <Compile Include="Model\DTO\DTOEstudiantes.cs" />
     <Compile Include="Program.cs" />
@@ -109,6 +111,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-faculty-35.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="View\asignaturas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -19,5 +19,10 @@ namespace Refuerzo2024.View.Estudiantes
             InitializeComponent();
             ControllerEstudiante next = new ControllerEstudiante(this);
         }
+
+        private void dgvEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
